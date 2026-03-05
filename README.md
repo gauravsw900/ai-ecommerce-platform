@@ -1,16 +1,34 @@
-# React + Vite
+# NeuroCommerce | AI-Driven E-Commerce & Analytics Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sophisticated full-stack demonstration of **Agentic AI** orchestration, featuring a **LangChain** Text-to-SQL engine and a modern **React** frontend. Built to showcase enterprise-grade integration between Generative AI and relational data systems.
 
-Currently, two official plugins are available:
+## 🚀 Key Features
+* **AI Copilot Agent:** A conversational RAG-based assistant that processes natural language to assist in product discovery.
+* **Text-to-SQL Terminal:** A developer-centric CLI that translates plain English queries into optimized **PostgreSQL** statements in real-time.
+* **Explainable AI (XAI) Overlay:** Visualizes AI recommendation confidence using SHAP-inspired weight analysis for transparency.
+* **System Telemetry:** Simulated dashboard tracking **Redis** cache hits and **Elasticsearch** latency to demonstrate a performance-first mindset.
+* **Secure Pipelines:** Designed for **JWT-based** authentication, following industry-standard security protocols for .NET/Python microservices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+* **Frontend:** React 18 (Vite), Tailwind CSS, Lucide Icons, Framer Motion.
+* **Backend:** FastAPI (Python), LangChain (SQL Agent), SQLAlchemy.
+* **Database:** PostgreSQL (Relation Storage) + Vector-based Semantic Search.
+* **Environment:** Docker (Postgres containerization), Git Version Control.
 
-## React Compiler
+## 📂 Project Structure
+```text
+├── src/                # React Frontend (UI & XAI Logic)
+├── backend/            # FastAPI Server & LangChain Orchestration
+├── docker-compose.yml  # Containerized Database Configuration
+└── README.md           # Project Documentation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+🏗️ System Architecture
+The platform utilizes a Microservices-style architecture. The React frontend communicates with a Python-based AI service. The AI service performs Intent Parsing on user queries, checks the PostgreSQL schema via LangChain, and executes dynamically generated SQL queries while maintaining a secure execution boundary.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📈 Future Roadmap
+[ ] Integration with a live .NET 8 Authentication Microservice.
+
+[ ] Real-time price tracking using WebSockets.
+
+[ ] Deployment of Vector Database (Pinecone) for advanced semantic search.
