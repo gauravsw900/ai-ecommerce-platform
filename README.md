@@ -23,12 +23,3 @@ A sophisticated full-stack demonstration of **Agentic AI** orchestration, featur
 └── README.md           # Project Documentation
 
 
-🏗️ System Architecture
-The platform utilizes a Microservices-style architecture. The React frontend communicates with a Python-based AI service. The AI service performs Intent Parsing on user queries, checks the PostgreSQL schema via LangChain, and executes dynamically generated SQL queries while maintaining a secure execution boundary.
-
-📈 Future Roadmap
-[ ] Integration with a live .NET 8 Authentication Microservice.
-
-[ ] Real-time price tracking using WebSockets.
-
-[ ] Deployment of Vector Database (Pinecone) for advanced semantic search.
