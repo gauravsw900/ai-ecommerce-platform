@@ -1,0 +1,29 @@
+# --- Frontend (React/Node) ---
+node_modules/
+dist/
+dist-ssr
+*.local
+npm-debug.log*
+yarn-debug.log*
+
+# --- Backend (Python/AI) ---
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+requirements.txt.lock
+
+# --- Environment Secrets (CRITICAL) ---
+.env
+.env.local
+.env.*.local
+
+# --- Database & OS ---
+*.db
+*.sqlite
+.DS_Store
+.vscode/
+.idea/
