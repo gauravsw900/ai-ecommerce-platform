@@ -15,6 +15,16 @@ A sophisticated full-stack demonstration of **Agentic AI** orchestration, featur
 * **Database:** PostgreSQL (Relation Storage) + Vector-based Semantic Search.
 * **Environment:** Docker (Postgres containerization), Git Version Control.
 
+## 🏗️ System Architecture
+* **The platform utilizes a Microservices-style architecture. The React frontend communicates via REST with a Python-based AI service. The AI service performs * **Intent Parsing on user queries, cross-references the PostgreSQL schema via LangChain, and executes dynamically generated SQL queries while maintaining a secure * **execution boundary to prevent SQL injection.
+
+## 📈 Future Roadmap
+* **[ ] Secure Authentication: Integration with a live .NET 8 Authentication Microservice using JWT Bearer tokens.
+
+* **[ ] High-Frequency Updates: Implementation of real-time price tracking using WebSockets.
+
+* **[ ] Vector Search Integration: Deployment of Pinecone for advanced semantic search, enabling "Hybrid Search" (SQL + Vector) for higher discovery relevance.
+
 ## 📂 Project Structure
 ```text
 ├── src/                # React Frontend (UI & XAI Logic)
